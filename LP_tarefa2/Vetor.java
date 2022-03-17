@@ -1,22 +1,20 @@
 package LP_tarefa2;
 
+import java.util.Scanner;
+
 public class Vetor {
 
 	public static void main(String[] args) {
-		int a;
-		int b;
-		int c;
-		int d;
 		int aux = 0;
 		
-		int vector[] = {a , b , c, d};
+		int vector[] = {3, 5, 76, 43, 10, 46, 8, 23, 98, 18 };
 		
-		for(int j = o; j<vector.length; j++) {
-			for (int c=o; c<victor.length; c++) {
-				if (vector[j] < vector [c]) {
+		for(int j = 0; j<vector.length; j++) {
+			for (int cl = 0; cl<vector.length; cl++) {
+				if (vector[j] < vector [cl]) {
 					aux = vector [j];
-					vector [j] = vector[c];
-					vector[c] = aux ;
+					vector [j] = vector[cl];
+					vector[cl] = aux ;
 					
 				}
 			}
@@ -26,17 +24,7 @@ public class Vetor {
 			System.out.println(vector[i]+ "   ");
 		}
 		
-		System.out.println("Insira valor de a");
-		a = entrada.nextInt();
 		
-		System.out.println("Insira valor de b");
-		b = entrada.nextInt();
-		
-		System.out.println("Insira valor de c");
-		c = entrada.nextInt();
-		
-		System.out.println("Insira valor de d");
-		d = entrada.nextInt();
 		
 		
 				
