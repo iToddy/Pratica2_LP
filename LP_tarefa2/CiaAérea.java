@@ -9,6 +9,8 @@ public class Q4 {
 		
 		Scanner entrada = new Scanner (System.in);
 		
+		int [] lugares = new int [100];
+		
 		Beggin_Registrer:
 		System.out.println("Selecione uma das opções do Menu"
 				+ "1- Cadastrar Passageiro"
@@ -40,13 +42,13 @@ public class Q4 {
 				System.out.println("Insira o número do seu vôo");
 				int flightCheck = entrada.nextInt();
 				
-				int sit[]= 100;
-				int numsit;
-				System.out.println("Insira o número do vôo");
-				numsit = entrada.nextInt();
 				
-				if (numsit = sit) {
-					System.out.println("Checkin realizado com sucesso");
+				System.out.println("Escolha sua poltrona");
+				int poltrona = entrada.nextInt();
+				
+				if ( lugares [poltrona- 1] = 0) {
+					lugars[poltrona- 1 ] = poltrona
+					System.out.println("Check in realizado com sucesso");		
 				} else {
 					System.out.println("Poltrona já ocupada");
 				}
@@ -60,8 +62,13 @@ public class Q4 {
 				System.out.println("Insira o número do seu vôo");
 				int flightCancel = entrada.nextInt();
 				
-				System.out.println("Vôo cancelado!");
+				System.out.println("Insira o número da poltrona");
+				int poltronaCancel = entrada.nextInt();
 				
+				if (lugares[poltraonaCancel - 1]!= 0) {
+					lugares[poltraonaCancel] = 0
+							System.out.println("Vôo cancelado");
+				}
 				break;
 				
 			default: 
@@ -74,5 +81,7 @@ public class Q4 {
 		
 		
 	}
+	
+
 }
 		
